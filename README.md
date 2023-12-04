@@ -51,9 +51,9 @@ build:
    - docker build .
 ```
 - Cкриншоты с успешно собранными сборками.
-   * <img src="images/Task_2_1.jpg" alt="Task_1_2" width="500" height="auto">
-   * <img src="images/Task_2_4.jpg" alt="Task_2_2" width="700" height="auto">
-   * <img src="images/Task_2_3.jpg" alt="Task_2_3" width="700" height="auto">
+   * <img src="images/Task_2_1_.jpg" alt="Task_1_2" width="500" height="auto">
+   * <img src="images/Task_2_2_.jpg" alt="Task_2_2" width="500" height="auto">
+   * <img src="images/Task_2_3_.jpg" alt="Task_2_3" width="500" height="auto">
 
 
 ---
