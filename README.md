@@ -20,8 +20,30 @@
 
 В качестве ответа в шаблон с решением добавьте:
 
- * файл gitlab-ci.yml для своего проекта или вставьте код в соответствующее поле в шаблоне;
- * скриншоты с успешно собранными сборками.
+### Решение
+- Pipeline
+
+```yaml
+stages:
+  - test
+  - build
+
+test:
+  stage: test
+  image: golang:1.17
+  script: 
+   - go test .
+
+build:
+  stage: build
+  image: docker:latest
+  script:
+   - docker build .
+```
+- Cкриншоты с успешно собранными сборками.
+   * <img src="images/Task_2_1.jpg" alt="Task_1_2" width="500" height="auto">
+   * <img src="images/Task_2_4.jpg" alt="Task_2_2" width="700" height="auto">
+   * <img src="images/Task_2_3.jpg" alt="Task_2_3" width="700" height="auto">
 
 
 ---
