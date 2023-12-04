@@ -26,13 +26,23 @@
 ```yaml
 stages:
   - test
+  - static-analysis
   - build
 
 test:
   stage: test
-  image: golang:1.17
+  image: golang:1.16
   script: 
    - go test .
+
+static-analysis:
+ stage: test
+ image:
+  name: sonarsource/sonar-scanner-cli
+  entrypoint: [""]
+ variables:
+ script:
+  - sonar-scanner -Dsonar.projectKey=git_project -Dsonar.sources=. -Dsonar.host.url=http://gitlab.localdomain:9000 -Dsonar.login=sqp_5f4b4be6cbc6f92b5db6bafdb3091491ec72612f
 
 build:
   stage: build
